@@ -10,20 +10,22 @@
 
         body{
             font-family: Arial, Helvetica, sans-serif; /*altera o tipo de letra*/
-            background-color: rgba(105, 105, 105, 0.425);
+            background-color: #bb212170;
         }
         
         .menu{
             justify-items: center; /* alinha os itens*/
-            background-color: #333; /* altera cor de fundo*/
-            color: #fff; /*altera a cor da letra*/
+            background-color:#c73a3a; /* altera cor de fundo*/
+            color: #0f0b0b; /*altera a cor da letra*/
+            padding: 10px 0px;
+            border-radius: 5px;
         }
 
         .menu-lista{
             list-style: none; /* tirar os pontinhos*/
             display:flex; /*deixa tudo flexível*/
             padding: 0;  /* separa os itens*/
-            margin: 0; /* altera a margem*/
+            margin:0 15px; /* altera a margem*/
         }
 
         .menu-item{
@@ -34,10 +36,12 @@
             display: block; /* quebra linha*/
             padding: 15px 20px; /* separa os itens*/
             text-decoration: none; /* decora o texto*/
-            color: #fff; /* altera cor da letra*/
+            color: #110707; /* altera cor da letra*/
+            font-weight: bold; /* altera fonte*/
         }
         .menu-item a:hover{
-            background-color: aqua; /*altera cor de fundo*/
+            background-color: rgba(112, 116, 116, 0.479); /*altera cor de fundo*/
+            border-radius: 5px;
         }
 
         .conteudo{
@@ -50,7 +54,11 @@
         .conteudo p{
             text-align: justify; 
             margin: 20px 30px px;
+        }
 
+        h1{
+            text-align: center;
+           color:#131010 ; 
         }
 
         
@@ -58,27 +66,41 @@
 
 </head>
 <body>
-        <nav class="menu">
 
-            <ul class="menu-lista">
-              <li class="menu-item"><a href="./index.html">ínicio</a></li>
-              <li class="menu-item"><a href="./index.html">Sobre</a></li>
-              <li class="menu-item"><a href="./index.html">Contatos</a></li>
-
-             </ul>
+    <header>
+        <h1>Sobre Nós</h1>
+        <p></p>
+    </header>
 
 
-         </nav>
+    <nav class="menu">
+
+        <ul class="menu-lista">
+          <li class="menu-item"><a href="./index.html">ínicio</a></li>
+          <li class="menu-item"><a href="./sobre.html">Sobre</a></li>
+          <li class="menu-item"><a href="./contatos.html">Contatos</a></li>
+
+         </ul>
+
+     </nav>
+
 
          
-         <div class="conteudo">
-            <h1>Sobre</h1>
+     <div class="container" id="inicio">
+        <h2>Início</h2>
+        <p>Esta é a seção inicial do nosso site. Aqui você encontrará uma visão geral do que oferecemos.</p>
+    </div>
 
-            <P>
-                Este é um exemplo de menu simples com uma caixa de conteúdo. O menu é responsivo e possui uma transição suave ao passar o mouse sobre os itens.
-                 A caixa de conteúdo está centralizada na página e possui visual limpo e moderno.
-                </P>
+    <div class="container" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Saiba mais sobre a nossa história, nossa missão e nossos valores. Somos uma equipe dedicada a...</p>
+    </div>
 
-         </div>
+
+    <div class="container" id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma pergunta ou gostaria de solicitar um orçamento? Entre em contato conosco através do formulário ou telefone.</p>
+    </div>
+
 </body>
 </html>
