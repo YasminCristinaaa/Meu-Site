@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site menu</title>
+
+   
+      <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*altera o tipo de letra*/
+            background-color: rgba(105, 105, 105, 0.425);
+        }
+        
+
+        .menu{
+            justify-items: center; /* alinha os itens*/
+            background-color: #333; /* altera cor de fundo*/
+            color: #fff; /*altera a cor da letra*/
+        }
+
+        .menu-lista{
+            list-style: none; /* tirar os pontinhos*/
+            display:flex; /*deixa tudo flexível*/
+            padding: 0;  /* separa os itens*/
+            margin: 0; /* altera a margem*/
+        }
+
+        .menu-item{
+            margin: 0; /* altera a margem*/
+        }
+
+        .menu-item a{
+            display: block; /* quebra linha*/
+            padding: 15px 20px; /* separa os itens*/
+            text-decoration: none; /* decora o texto*/
+            color: #fff; /* altera cor da letra*/
+        }
+        .menu-item a:hover{
+            background-color: aqua; /*altera cor de fundo*/
+            }
+
+        .conteudo{
+            background-color: white;
+            text-align: center; /*alinha ao centro*/
+            margin: 20px 20%;
+            padding: 20px;
+            display: block;
+            
+        }
+
+        .conteudo p{
+            text-align: justify; 
+            margin: 20px 30px;
+        }
+
+         button{
+            padding: 10px;
+            width: 20%;
+            border-radius: 3px;
+            cursor: pointer;
+            color: black;
+            background-color: #4cae4c; /* Cor no hover */
+            font-size: 16px;
+        }
+
+        
+     </style>
+
+</head>
+<body>
+        <nav class="menu">
+
+            <ul class="menu-lista">
+              <li class="menu-item"><a href="./index.html">ínicio</a></li>
+              <li class="menu-item"><a href="./index.html">Sobre</a></li>
+              <li class="menu-item"><a href="./index.html">Contatos</a></li>
+
+             </ul>
+
+
+         </nav>
+
+         
+         <div class="conteudo">
+            <h2>Entre em contato conosco!</h2>
+
+
+            <form action="/contato" method="post">
+              <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+              </div>
+              <br>
+          
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+              </div>
+              <br>
+              <div>
+                <label for="telefone">Phone:</label>
+                <input type="tel" id="telefone" name="telefone">
+              </div>
+              <br>
+              <button type="submit">Enviar</button>
+            </form>
+          
+          
+                             
+
+         </div>
+</body>
+</html>
