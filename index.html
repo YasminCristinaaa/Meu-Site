@@ -3,82 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site menu</title>
+    <title>Meu Menu Elaborado</title>
 
-   
-      <style>
-
-        body{
-            font-family: Arial, Helvetica, sans-serif; /*altera o tipo de letra*/
-            background-color: rgba(105, 105, 105, 0.425);
+    <style>
+        /* A tag <style> define estilos CSS para a página. */
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #bb212170; /* altera cor de fundo*/
+        }
+        nav {
+            /* A tag <nav> representa uma seção de navegação. */
+            background-color: #c73a3a;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+        nav ul {
+            /* A tag <ul> cria uma lista não ordenada de itens de navegação. */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* alinha ao centro*/
+        }
+        nav ul li {
+            /* A tag <li> representa um item dentro da lista de navegação. */
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            /* A tag <a> cria um link para outra página ou seção. */
+            text-decoration: none; /* aqui estiliza o texto*/
+            color: rgb(0, 0, 0); /*altera a cor do texto*/
+            font-weight: bold; /* fonte do inicio, sobre e contatos*/
         }
         
-        .menu{
-            justify-items: center; /* alinha os itens*/
-            background-color: #333; /* altera cor de fundo*/
-            color: #fff; /*altera a cor da letra*/
-        }
-
-        .menu-lista{
-            list-style: none; /* tirar os pontinhos*/
-            display:flex; /*deixa tudo flexível*/
-            padding: 0;  /* separa os itens*/
-            margin: 0; /* altera a margem*/
-        }
-
-        .menu-item{
-            margin: 0; /* altera a margem*/
-        }
-
-        .menu-item a{
-            display: block; /* quebra linha*/
-            padding: 15px 20px; /* separa os itens*/
-            text-decoration: none; /* decora o texto*/
-            color: #fff; /* altera cor da letra*/
-        }
-        .menu-item a:hover{
-            background-color: aqua; /*altera cor de fundo*/
-        }
-
-        .conteudo{
+        .container {
+            /* A tag <div> cria uma divisão ou seção genérica no conteúdo. */
             background-color: white;
-            text-align: center; /*alinha ao centro*/
-            margin: 20px 20%;
-            padding: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        h1 {
+            /* A tag <h1> define um cabeçalho de nível 1, geralmente o título principal. */
+            color: #131010; /* altera cor do titulo*/
+            text-align: center; /* alinha ao centro*/
+        }
+        p {
+            /* A tag <p> define um parágrafo de texto. */
+            line-height: 1.6;
+            color: #555;
         }
 
-        .conteudo p{
-            text-align: justify; 
-            margin: 20px 30px px;
-
+        .menu-item a:hover{
+            background-color: rgba(112, 116, 116, 0.479); /*altera cor de fundo*/
+            border-radius: 5px; /* altera a borda*/
         }
-
-        
-     </style>
-
+    </style>
 </head>
 <body>
-        <nav class="menu">
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <p></p>
+    </header>
 
-            <ul class="menu-lista">
-              <li class="menu-item"><a href="./index.html">ínicio</a></li>
-              <li class="menu-item"><a href="./sobre.html">Sobre</a></li>
-              <li class="menu-item"><a href="./Contatos.html">Contatos</a></li>
+    <nav class="menu">
 
-             </ul>
+        <ul class="menu-lista">
+          <li class="menu-item"><a href="./index.html">ínicio</a></li>
+          <li class="menu-item"><a href="./sobre.html">Sobre</a></li>
+          <li class="menu-item"><a href="./contatos.html">Contatos</a></li>
+
+         </ul>
+
+     </nav>
+
+    <div class="container" id="inicio">
+        <h2>Início</h2>
+        <p>Esta é a seção inicial do nosso site. Aqui você encontrará uma visão geral do que oferecemos.</p>
+    </div>
+
+    <div class="container" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Saiba mais sobre a nossa história, nossa missão e nossos valores. Somos uma equipe dedicada a...</p>
+    </div>
 
 
-         </nav>
+    <div class="container" id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma pergunta ou gostaria de solicitar um orçamento? Entre em contato conosco através do formulário ou telefone.</p>
+    </div>
 
-         
-         <div class="conteudo">
-            <h1>Bem-vindo ao Menu Simples</h1>
-
-            <P>
-                Este é um exemplo de menu simples com uma caixa de conteúdo. O menu é responsivo e possui uma transição suave ao passar o mouse sobre os itens.
-                 A caixa de conteúdo está centralizada na página e possui visual limpo e moderno.
-              </P>
-
-         </div>
+    
 </body>
 </html>
